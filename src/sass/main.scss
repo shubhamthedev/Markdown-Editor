@@ -1,0 +1,74 @@
+$color-one: #1a535c;
+$color-two: #4ecdc4;
+$color-three: #f7fff7;
+$color-four: #ff6b6b;
+$color-five: #ffe66d;
+$color-white: #fff;
+$color-black: #000;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+  font-family: "Source Code Pro", monospace;
+  background-image: linear-gradient(to right bottom, $color-one, $color-two);
+  background-repeat: no-repeat;
+  height: 97vh;
+}
+.container {
+  width: 114rem;
+  margin: 0 auto;
+}
+//markdown page
+.markdown-title {
+  text-align: center;
+  margin: 2rem auto;
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-family: "Open Sans", sans-serif;
+  color: $color-three;
+}
+.editor-textarea {
+  background-color: $color-five;
+  //border: 1px solid $color-black;
+  border: none;
+  border-radius: 1rem;
+  padding: 2rem 3rem;
+  color: $color-four;
+  font-family: inherit;
+  resize: none;
+  font-weight: 600;
+}
+.editor-heading {
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  color: $color-three;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.previewer {
+  width: 48rem;
+  height: 48rem;
+  background-color: $color-three;
+  margin-top: 4rem;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  overflow: scroll;
+}
+.image {
+  height: 8rem;
+}
